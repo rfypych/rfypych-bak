@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rofikul Huda — Portfolio</title>
+  <meta name="color-scheme" content="dark" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="letterbox top"></div>
+  <div class="letterbox bottom"></div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">ROFIKUL HUDA</div>
+      <div class="menu">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="menu-btn" aria-label="Open Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero-grid"></div>
+    <div class="wrap">
+      <pre class="eyebrow">// portfolio.v1 — engineered with precision</pre>
+      <h1 class="headline">
+        <span>Interfaces with intent.</span>
+        <span>Systems built to last.</span>
+      </h1>
+      <p class="lead">
+        Frontend engineer focused on performance, accessibility, and resilient architectures.
+        Crafting experiences where every pixel, state, and frame has purpose.
+      </p>
+      <div class="btn-row">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn ghost" href="#contact">Get In Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="about" id="about">
+    <div class="wrap">
+      <pre class="eyebrow">// about</pre>
+      <div class="cols">
+        <div class="panel">
+          <h3>Profile</h3>
+          <p class="muted">
+            I design and build modern web applications with a product mindset.
+            My process balances rapid iteration with strong fundamentals: semantic HTML, accessible UI,
+            scalable styling, and type-safe data flows.
+          </p>
+        </div>
+        <div class="panel">
+          <h3>Stack</h3>
+          <div class="code" aria-label="stack">
+<span class="com">// toolchain</span>
+<span class="kw">const</span> lang = <span class="str">"TypeScript"</span>;
+<span class="kw">const</span> ui = [<span class="str">"React"</span>, <span class="str">"Next.js"</span>, <span class="str">"GSAP"</span>];
+<span class="kw">const</span> style = [<span class="str">"CSS Modules"</span>, <span class="str">"Tailwind"</span>, <span class="str">"Framer Motion"</span>];
+<span class="kw">const</span> qa = [<span class="str">"Jest"</span>, <span class="str">"Playwright"</span>];
+<span class="kw">const</span> perf = { budget: <span class="num">170</span>, <span class="str">"LCP"</span>: <span class="num">2.4</span>, <span class="str">"CLS"</span>: <span class="num">0.03</span> };
+
+<span class="com">// philosophy</span>
+<span class="kw">function</span> build(product){
+  <span class="com">// progressive enhancement > glitter</span>
+  <span class="kw">return</span> product.accessible() && product.performant() && product.maintainable();
+}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="wrap">
+      <pre class="eyebrow">// selected.work</pre>
+      <div class="grid">
+        <article class="card">
+          <div class="media">
+            <img src="https://picsum.photos/seed/design/600/400" alt="Design System — Atlas">
+          </div>
+          <div class="body">
+            <h4>Design System — Atlas</h4>
+            <div class="tags">
+              <span class="tag">TypeScript</span>
+              <span class="tag">React</span>
+              <span class="tag">Tokens</span>
+            </div>
+            <p>Cross-product UI kit with tokens, primitives, and CI pipelines for visual regression.</p>
+            <a class="link" href="#">View case study →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="media">
+            <img src="https://picsum.photos/seed/dashboard/600/400" alt="Realtime Dashboard">
+          </div>
+          <div class="body">
+            <h4>Realtime Dashboard</h4>
+            <div class="tags">
+              <span class="tag">Next.js</span>
+              <span class="tag">WebSockets</span>
+              <span class="tag">Vercel</span>
+            </div>
+            <p>Telemetry visualization with stream hydration, virtualized charts, and optimistic updates.</p>
+            <a class="link" href="#">View case study →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="media">
+            <img src="https://picsum.photos/seed/stories/600/400" alt="Interactive Stories">
+          </div>
+          <div class="body">
+            <h4>Interactive Stories</h4>
+            <div class="tags">
+              <span class="tag">GSAP</span>
+              <span class="tag">ScrollTrigger</span>
+              <span class="tag">SVG</span>
+            </div>
+            <p>Cinematic longform with parallax, masks, and frame-accurate scroll choreography.</p>
+            <a class="link" href="#">View case study →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="media">
+            <img src="https://picsum.photos/seed/commerce/600/400" alt="Commerce Performance">
+          </div>
+          <div class="body">
+            <h4>Commerce Performance</h4>
+            <div class="tags">
+              <span class="tag">SSR</span>
+              <span class="tag">Edge</span>
+              <span class="tag">Lighthouse</span>
+            </div>
+            <p>Core Web Vitals uplift via critical CSS, route splits, and image policy refactors.</p>
+            <a class="link" href="#">View case study →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="reel" aria-label="statement">
+    <div class="wrap">
+      <div class="marquee" aria-hidden="true">Build. Measure. Refine. Deliver. Build. Measure. Refine. Deliver.</div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <pre class="eyebrow">// contact</pre>
+      <div class="panel">
+        <h3>Let’s ship something reliable</h3>
+        <p class="muted">
+          Available for collaborations, product work, or system design engagements.
+          If the work demands clarity, performance, and polish, I’d love to hear about it.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="mailto:rofikul.huda@example.com">Email</a>
+          <a class="btn ghost" href="#" target="_blank" rel="noopener">Resume</a>
+          <a class="btn ghost" href="#" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <a href="#home" class="back-to-top" aria-label="Go to top">↑</a>
+
+  <footer>
+    © <span id="y"></span> Rofikul Huda. Built with semantic HTML, CSS, and GSAP.
+  </footer>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js " defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js " defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
