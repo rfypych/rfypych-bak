@@ -67,7 +67,7 @@ window.addEventListener("load", () => {
       scrollTrigger:{
         trigger: card,
         start:"top 85%",
-        toggleActions:"play none none reverse"
+        toggleActions:"play none none none" // Play once, don't reverse
       }
     });
 
@@ -90,7 +90,7 @@ window.addEventListener("load", () => {
     gsap.to(mq, {
       x: "-50%",
       ease: "none",
-      duration: 30,
+          duration: 20, // Faster duration
       repeat: -1
     });
   }
@@ -135,12 +135,20 @@ window.addEventListener("load", () => {
     }
   });
 
-  backToTopBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    gsap.to(window, {
-      scrollTo: { y: 0, autoKill: false },
-      duration: 1.2,
-      ease: "power3.inOut"
+  /* Smooth Scroll for all anchor links */
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+
+      // Ensure it's not just a hash, and the element exists
+      if (targetId.length > 1 && document.querySelector(targetId)) {
+        gsap.to(window, {
+          scrollTo: { y: targetId, offsetY: 20, autoKill: false },
+          duration: 1.5,
+          ease: "power3.inOut"
+        });
+      }
     });
   });
 });

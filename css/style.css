@@ -211,6 +211,7 @@ section{
 .reel{
   position:relative;
   background: radial-gradient(900px 500px at 50% 0%, rgba(255,140,66,0.1), transparent 60%);
+  overflow: hidden; /* Prevent marquee from causing horizontal scroll */
 }
 .reel .marquee{
   font-size: clamp(32px, 8vw, 120px);
